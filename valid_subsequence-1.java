@@ -25,30 +25,24 @@ class Solution {
                     ev_od++;
                     eo_prev=0;
                 }
-
                 if(oe_prev == 1){
                     od_ev++;
                     oe_prev=0;
                 }
-
             }else{
                 od++;
                 if(oe_prev == 0 || oe_prev ==-1){
                     od_ev++;
                     oe_prev = 1;
                 }
-
                 if(eo_prev == 0){
                     ev_od++;
                     eo_prev=1;
                 }
-
             }
         }
         int max = Math.max(od, Math.max(ev, Math.max(od_ev, ev_od)));
         return max;
-
-
         // 2nd way   -- keeping it short and clear
         int ev = 0, od = 0;
         for (int num : nums) {
@@ -57,7 +51,6 @@ class Solution {
             else 
                 od++;
         }
-
         int len = 1; // At least one number
         int prevParity = nums[0]%2;
 
