@@ -21,7 +21,7 @@ class Solution {
         }
         PriorityQueue<Integer> minh = new PriorityQueue<>();
         long rs = 0;
-        for(int i=l-1; i>=n; i--){  // atleast n ele should be there in left from l-1 to n 
+        for(int i=l-1; i>=n; i--){  //atleast n ele should be there in left from l-1 to n 
             minh.add(nums[i]);
             rs+= nums[i];
 
