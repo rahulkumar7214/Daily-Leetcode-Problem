@@ -1,5 +1,5 @@
 /* 1277. Count Square Submatrices with All Ones
- Date : 27-08-2025  Marked---Medium
+ Date : 27-8-2025  Marked---Medium
 */
 //-------------------------------------------->>> 1st way through Memoization---------------------<<
 class Solution {
