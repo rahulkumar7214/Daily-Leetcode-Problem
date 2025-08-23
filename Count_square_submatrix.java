@@ -1,5 +1,5 @@
 /* 1277. Count Square Submatrices with All Ones
- Date : 20-08-2025  Marked---Medium
+ Date : 27-08-2025  Marked---Medium
 */
 //-------------------------------------------->>> 1st way through Memoization---------------------<<
 class Solution {
@@ -20,8 +20,8 @@ class Solution {
         }
 
         int ri = solve(i, j+1, mat, dp);
-        int diag = solve(i+1, j, mat, dp);
-        int down = solve(i+1, j+1, mat, dp);
+        int down = solve(i+1, j, mat, dp);
+        int diag = solve(i+1, j+1, mat, dp);
 
         return dp[i][j] = 1+Math.min(ri, Math.min(diag, down));
     }
