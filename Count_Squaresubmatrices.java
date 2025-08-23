@@ -1,5 +1,5 @@
 /* 1504. Count Submatrices With All Ones
-    Date : 28-08-2025  Marked---Medium
+    Date : 21-08-2025  Marked---Medium
 */
 class Solution {
     public int findcount(int[] col){
